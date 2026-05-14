@@ -44,7 +44,7 @@ export default function Home() {
       });
       const data = await res.json();
       setDocsCount(prev => prev + 1);
-      setMessages(prev => [...prev, { role: "bot", content: `Successfully indexed ${file.filename}. You can now ask questions about its content.` }]);
+      setMessages(prev => [...prev, { role: "bot", content: `Successfully indexed ${file.name}. You can now ask questions about its content.` }]);
     } catch (err) {
       setMessages(prev => [...prev, { role: "bot", content: "Error uploading document. Please ensure the backend is running." }]);
     } finally {
