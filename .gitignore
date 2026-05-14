@@ -1,0 +1,24 @@
+# Ignore Python files
+__pycache__/
+*.py[cod]
+*$py.class
+backend/.env
+backend/uploads/
+venv/
+.venv/
+
+# Ignore Node.js files
+node_modules/
+frontend/.env.local
+frontend/.next/
+frontend/out/
+build/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables
+.env
+.env.*
+!.env.example
